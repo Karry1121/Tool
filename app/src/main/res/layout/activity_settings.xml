@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    tools:context=".Activity.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_settings"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar_settings"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/btn_goSettings">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_settings_poetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_goTodayPoetry"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_poetry_open_browser"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/btn_poetry_open_browser"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_browser"
+                app:layout_constraintTop_toBottomOf="@id/tv_settings_poetry" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_settings_poetry_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_poetry_open_browser"
+                app:layout_constraintRight_toLeftOf="@id/iv_settings_goto1"
+                app:layout_constraintTop_toTopOf="@id/btn_poetry_open_browser" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_settings_goto1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_poetry_open_browser"
+                app:layout_constraintRight_toRightOf="@id/btn_poetry_open_browser"
+                app:layout_constraintTop_toTopOf="@id/btn_poetry_open_browser"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_poetry_open_browser" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_settings_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tv_settings_qrcode"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_settings_show_qrcode_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slide_qrcode_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:stepSize="1"
+                android:value="300"
+                android:valueFrom="100"
+                android:valueTo="900"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_settings_qrcode" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_about_app"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/btn_about_app"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_info"
+                app:layout_constraintTop_toBottomOf="@id/slide_qrcode_size"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_about_app"
+                app:layout_constraintRight_toRightOf="@id/btn_about_app"
+                app:layout_constraintTop_toTopOf="@id/btn_about_app"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_about_app" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

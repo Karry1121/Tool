@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    tools:context=".Activity.mine.MineFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_mine"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:menu="@menu/top_app_bar_mine" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_scan_history"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/btn_go_scan_history"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        app:icon="@drawable/ic_qrcode_scanner"
+        app:iconTint="?attr/colorControlNormal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_home" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_go_scan_history"
+        app:layout_constraintRight_toRightOf="@id/btn_go_scan_history"
+        app:layout_constraintTop_toTopOf="@id/btn_go_scan_history"
+        app:srcCompat="@drawable/ic_go_to"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/btn_go_scan_history" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_clearCache"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/btn_clearCache"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        app:icon="@drawable/ic_delete"
+        app:iconTint="?attr/colorControlNormal"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_show_cache_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/btn_clearCache"
+        app:layout_constraintRight_toRightOf="@id/btn_clearCache"
+        app:layout_constraintTop_toTopOf="@id/btn_clearCache" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/btn_clearCache" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

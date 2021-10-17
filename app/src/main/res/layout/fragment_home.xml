@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    tools:context=".Activity.home.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_home"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/title_home" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_goTodayPoetry"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_goTodayPoetry"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_bookshelf"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goTodayPoetry"
+                app:layout_constraintLeft_toLeftOf="@id/btn_goTodayPoetry"
+                app:layout_constraintTop_toTopOf="@id/btn_goTodayPoetry"
+                app:srcCompat="@drawable/bookshelf"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goTodayPoetry"
+                app:layout_constraintRight_toRightOf="@id/btn_goTodayPoetry"
+                app:layout_constraintTop_toTopOf="@id/btn_goTodayPoetry"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_goTodayPoetry" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_goHistoryDay"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_goHistoryDay"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_history_today"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goHistoryDay"
+                app:layout_constraintLeft_toLeftOf="@id/btn_goHistoryDay"
+                app:layout_constraintTop_toTopOf="@id/btn_goHistoryDay"
+                app:srcCompat="@drawable/history_today"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_goTo2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goHistoryDay"
+                app:layout_constraintRight_toRightOf="@id/btn_goHistoryDay"
+                app:layout_constraintTop_toTopOf="@id/btn_goHistoryDay"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_goHistoryDay" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_goQueryPhoneNumber"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_goQueryPhoneNumber"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/view2"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goQueryPhoneNumber"
+                app:layout_constraintLeft_toLeftOf="@id/btn_goQueryPhoneNumber"
+                app:layout_constraintTop_toTopOf="@id/btn_goQueryPhoneNumber"
+                app:srcCompat="@drawable/phone"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goQueryPhoneNumber"
+                app:layout_constraintRight_toRightOf="@id/btn_goQueryPhoneNumber"
+                app:layout_constraintTop_toTopOf="@id/btn_goQueryPhoneNumber"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_goQueryPhoneNumber" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_goScanQRCode"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_goScanQRCode"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/view3"
+                tools:ignore="RtlSymmetry"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goScanQRCode"
+                app:layout_constraintLeft_toLeftOf="@id/btn_goScanQRCode"
+                app:layout_constraintTop_toTopOf="@id/btn_goScanQRCode"
+                app:srcCompat="@drawable/ic_qrcode_scanner"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goScanQRCode"
+                app:layout_constraintRight_toRightOf="@id/btn_goScanQRCode"
+                app:layout_constraintTop_toTopOf="@id/btn_goScanQRCode"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_goScanQRCode" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_goQueryOilPrice"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_goQueryOilPrice"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/view4"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_dustbin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goQueryOilPrice"
+                app:layout_constraintLeft_toLeftOf="@id/btn_goQueryOilPrice"
+                app:layout_constraintTop_toTopOf="@id/btn_goQueryOilPrice"
+                app:srcCompat="@drawable/ic_car_oil"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_goQueryOilPrice"
+                app:layout_constraintRight_toRightOf="@id/btn_goQueryOilPrice"
+                app:layout_constraintTop_toTopOf="@id/btn_goQueryOilPrice"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_goQueryOilPrice" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_GenerateQRCode"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/btn_GenerateQRCode"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/view5"
+                tools:ignore="RtlSymmetry" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_generateQRCode"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_GenerateQRCode"
+                app:layout_constraintLeft_toLeftOf="@id/btn_GenerateQRCode"
+                app:layout_constraintTop_toTopOf="@id/btn_GenerateQRCode"
+                app:srcCompat="@drawable/two_dimensional_code"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_GenerateQRCode"
+                app:layout_constraintRight_toRightOf="@id/btn_GenerateQRCode"
+                app:layout_constraintTop_toTopOf="@id/btn_GenerateQRCode"
+                app:srcCompat="@drawable/ic_go_to"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                app:layout_constraintTop_toBottomOf="@id/btn_GenerateQRCode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

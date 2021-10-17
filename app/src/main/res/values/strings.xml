@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">小工具</string>
+    <string name="btn_goTodayPoetry">今日诗词</string>
+    <string name="btn_goHistoryDay">历史上的今天</string>
+    <string name="btn_goQueryPhoneNumber">手机号归属地查询</string>
+    <string name="btn_goScanQRCode">扫码</string>
+    <string name="btn_goQueryOilPrice">今日油价查询</string>
+    <string name="iv_logo">logo</string>
+    <string name="tv_WelcomeText">小工具集合</string>
+    <string name="btn_GenerateQRCode">生成二维码</string>
+    <string name="btn_change_poetry">换一首</string>
+    <string name="et_phone_number">手机号</string>
+    <string name="btn_query_phone_location">点我立即查询</string>
+    <string name="tv_result_title">查询结果</string>
+    <string name="et_qrcode_content">二维码内容</string>
+    <string name="btn_generate">点我生成</string>
+    <string name="btn_save_qrcode">保存图片</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">我的</string>
+    <string name="btn_goSettings">设置</string>
+    <string name="btn_clearCache">清理缓存</string>
+    <string name="btn_about_app">关于本软件</string>
+    <string name="tv_loading_dialog">努力加载中……</string>
+    <string name="btn_clear_qrcode">清除图片</string>
+    <string name="et_garbage_name">垃圾名称</string>
+    <string name="btn_garbage">点我查询</string>
+    <string name="btn_full_poetry">查看完整诗词</string>
+    <string name="btn_poetry_open_browser">打开浏览器查询</string>
+    <string name="tv_settings_qrcode">二维码大小</string>
+    <string name="more">更多</string>
+    <string name="btn_go_scan_history">扫码历史</string>
+    <string name="sw_open_scan_history">启用扫码历史记录</string>
+</resources>

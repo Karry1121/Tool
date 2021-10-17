@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.karry.tool">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 粗略定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 精细定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_app_logo_black"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_logo_black"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tool"
+        tools:targetApi="n">
+        <activity
+            android:name=".Activity.OilPrice.OilPriceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ScanHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.APPInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.FirstPageActivity"
+            android:theme="@style/MySplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.GenerateQRCode.GenerateQRCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PhoneNumber.QueryPhoneNumberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.HistoryToday.HistoryTodayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.TodayPoetry.TodayPoetryActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

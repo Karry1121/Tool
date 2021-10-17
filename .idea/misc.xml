@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/back_30dp.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/edittext_shape.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/ic_app_logo.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/ic_back.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/ic_refresh.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/ic_settings.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-night/toast_shape.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-v24/back_30dp.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-v24/edittext_shape.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-v24/ic_back.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable-v24/ic_settings.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/back_30dp.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/edittext_shape.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_app_logo.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_app_logo_black.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_back.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.27076923076923076" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_go_to.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_refresh.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_settings.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/toast_shape.xml" value="0.275" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_appinfo.xml" value="0.18568840579710144" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_first_page.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_generate_qrcode.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_history_today.xml" value="0.1897644927536232" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_query_garbage.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_query_phone_number.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_settings.xml" value="0.18568840579710144" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_splash.xml" value="0.21784420289855072" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_today_poetry.xml" value="0.18568840579710144" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/dialog_fragment_layout.xml" value="0.536" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_dashboard.xml" value="0.16530797101449277" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_mine.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_settings.xml" value="0.16530797101449277" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/history_today_item.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/loading_dialog_layout.xml" value="0.4" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/phone_detail_item.xml" value="0.1802536231884058" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/phone_query_history.xml" value="0.6" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/phone_query_history_item.xml" value="0.1802536231884058" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/title_bar.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/title_bar_main.xml" value="0.16485507246376813" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/toast_layout_text.xml" value="0.1852355072463768" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25092592592592594" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/menu/top_app_bar.xml" value="0.25885416666666666" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/menu/top_app_bar_mine.xml" value="0.25885416666666666" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-night/ic_delete.xml" value="0.1796875" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-night/ic_phone.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-night/ic_save.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-v24/ic_car_oil.xml" value="0.29444444444444445" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-v24/ic_delete.xml" value="0.1796875" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-v24/ic_phone.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable-v24/ic_save.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_app_logo.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_app_logo_black.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_back.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_book.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_car_oil.xml" value="0.29444444444444445" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_delete.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_dust_bin.xml" value="0.3" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_go_to.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_phone.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_qrcode.xml" value="0.2916666666666667" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_qrcode_scanner.xml" value="0.29444444444444445" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_refresh.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_renew.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_save.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/drawable/ic_settings.xml" value="0.2833333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_appinfo.xml" value="0.26856884057971014" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_first_page.xml" value="0.27309782608695654" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_generate_qrcode.xml" value="0.2977777777777778" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_history_today.xml" value="0.14766970618034447" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_main.xml" value="0.2977777777777778" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_oil_price.xml" value="0.2921195652173913" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_query_garbage.xml" value="0.14766970618034447" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_query_phone_number.xml" value="0.2977777777777778" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_scan_history.xml" value="0.28396739130434784" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_settings.xml" value="0.2977777777777778" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_splash.xml" value="0.2346014492753623" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/activity_today_poetry.xml" value="0.2977777777777778" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/history_today_item.xml" value="0.26042632066728455" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/list_popup_window_item.xml" value="0.28125" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/phone_detail_item.xml" value="0.14766970618034447" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/layout/toast_layout_text.xml" value="0.14766970618034447" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/menu/top_app_bar_mine.xml" value="0.2601851851851852" />
+        <entry key="..\:/Android_Application/Tool/app/src/main/res/menu/top_app_bar_settings.xml" value="0.25462962962962965" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
