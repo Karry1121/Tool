@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/drawable/ic_back.xml" value="0.27076923076923076" />
         <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_appinfo.xml" value="0.12588652482269502" />
         <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_first_page.xml" value="0.12588652482269502" />
         <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_generate_qrcode.xml" value="0.12588652482269502" />
