@@ -30,6 +30,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.karry.tool.Helper.LoadingDialogHelper;
+import com.karry.tool.Helper.OtherHelper;
 import com.karry.tool.Helper.ToastHelper;
 import com.karry.tool.R;
 
@@ -38,9 +39,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
 import java.util.Objects;
 
 public class GenerateQRCodeActivity extends AppCompatActivity {
@@ -147,10 +145,7 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
 			folder.mkdir();
 		}
 
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss", Locale.CHINESE);
-		Calendar calendar = Calendar.getInstance();
-		String date = simpleDateFormat.format(calendar.getTime());
-		File file = new File(folder, date + ".jpg");
+		File file = new File(folder, OtherHelper.getCurrentDate("yyyyMMddHHmmss") + ".jpg");
 		try {
 			FileOutputStream fileOutputStream = new FileOutputStream(file);
 			fileOutputStream.write(bytes, 0, bytes.length);
@@ -169,13 +164,10 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
 
 	@RequiresApi(api = Build.VERSION_CODES.Q)
 	private void savePicture_10() {
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss", Locale.CHINESE);
-		Calendar calendar = Calendar.getInstance();
-		String date = simpleDateFormat.format(calendar.getTime());
-
 		ContentValues contentValues = new ContentValues();
 		contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + File.separator + "Tool");
-		contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, "Tool_" + date + ".jpg");
+		contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME,
+				"Tool_" + OtherHelper.getCurrentDate("yyyyMMddHHmmss") + ".jpg");
 		contentValues.put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg");
 		contentValues.put(MediaStore.MediaColumns.DATE_ADDED, System.currentTimeMillis() / 1000);
 		contentValues.put(MediaStore.MediaColumns.DATE_MODIFIED, System.currentTimeMillis() / 1000);

@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_appinfo.xml" value="0.12588652482269502" />
         <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_first_page.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_generate_qrcode.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_history_today.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_oil_price.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_query_phone_number.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_scan_history.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_settings.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/activity_today_poetry.xml" value="0.12588652482269502" />
         <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_home.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/fragment_mine.xml" value="0.12588652482269502" />
+        <entry key="..\:/AndroidProject/Tool/app/src/main/res/layout/scan_history_item.xml" value="0.12588652482269502" />
       </map>
     </option>
   </component>
