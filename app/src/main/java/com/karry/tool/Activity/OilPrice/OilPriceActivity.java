@@ -77,7 +77,7 @@ public class OilPriceActivity extends AppCompatActivity {
 		initView();
 
 		oilPriceViewModel = new ViewModelProvider(this,
-				ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(OilPriceViewModel.class);
+				(ViewModelProvider.Factory) ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(OilPriceViewModel.class);
 		if (oilPriceViewModel.loadingDialogHelper == null) {
 			oilPriceViewModel.loadingDialogHelper = new LoadingDialogHelper(this, "加载中……");
 		}

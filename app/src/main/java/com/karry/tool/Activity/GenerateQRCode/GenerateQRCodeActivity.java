@@ -75,7 +75,7 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
 		initView();
 
 		qrCodeViewModel = new ViewModelProvider(this,
-				ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(QRCodeViewModel.class);
+				(ViewModelProvider.Factory) ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(QRCodeViewModel.class);
 		if (qrCodeViewModel.loadingDialogHelper == null) {
 			qrCodeViewModel.loadingDialogHelper = new LoadingDialogHelper(this, "正在生成……");
 		}

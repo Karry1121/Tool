@@ -39,7 +39,7 @@ public class HistoryTodayActivity extends AppCompatActivity {
 		initView();
 
 		HistoryTodayViewModel historyTodayViewModel = new ViewModelProvider(this,
-				ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(HistoryTodayViewModel.class);
+				(ViewModelProvider.Factory) ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(HistoryTodayViewModel.class);
 		if (historyTodayViewModel.loadingDialogHelper == null) {
 			historyTodayViewModel.loadingDialogHelper = new LoadingDialogHelper(this);
 		}

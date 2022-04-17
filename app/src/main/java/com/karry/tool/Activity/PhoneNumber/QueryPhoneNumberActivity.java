@@ -50,7 +50,7 @@ public class QueryPhoneNumberActivity extends AppCompatActivity {
 		}
 
 		QueryPhoneNumberViewModel queryPhoneNumberViewModel = new ViewModelProvider(this,
-				ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(QueryPhoneNumberViewModel.class);
+				(ViewModelProvider.Factory) ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(QueryPhoneNumberViewModel.class);
 		if (queryPhoneNumberViewModel.loadingDialogHelper == null) {
 			queryPhoneNumberViewModel.loadingDialogHelper = new LoadingDialogHelper(this, "查询中，请稍后……");
 		}

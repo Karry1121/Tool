@@ -43,7 +43,7 @@ public class TodayPoetryActivity extends AppCompatActivity {
 		initView();
 
 		PoetryViewModel poetryViewModel = new ViewModelProvider(this,
-				ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(PoetryViewModel.class);
+				(ViewModelProvider.Factory) ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(PoetryViewModel.class);
 
 		//有数据，则恢复显示；没有数据，则重新获取
 		if (poetryViewModel.poetryBean != null) {
