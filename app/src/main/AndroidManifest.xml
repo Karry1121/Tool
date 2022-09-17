@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.karry.tool">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,7 +22,9 @@
         android:roundIcon="@drawable/ic_app_logo_black"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tool"
-        tools:targetApi="n">
+        tools:targetApi="s"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        tools:ignore="DataExtractionRules">
         <activity
             android:name=".Activity.OilPrice.OilPriceActivity"
             android:exported="true" />
